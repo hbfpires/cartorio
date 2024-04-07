@@ -66,7 +66,7 @@ int consulta()
 	char cpf[100];
 	char conteudo[200];
 	
-	printf("Digite o CPF a ser consultado: ");
+	printf("Digite o CPF a ser consultado: "); 
 	scanf("%s",cpf);
 	
 	FILE *file;
@@ -112,20 +112,9 @@ int deletar()
 		printf("O usuário foi deletado com sucesso!\n");
 		system("pause");
 	}
-	
-		
-	
 			
-		
-	
-
-
 }
-	
-	
-
-
-
+		
 int main()
 	{	
 	int opcao=0; //Definindo variáveis
@@ -162,7 +151,7 @@ int main()
 	
 			scanf("%d", &opcao); //armazenando a escolha do usuário
 	
-			system("cls");
+			system("cls"); //responsável por limpar a tela
 	
 	
 	
@@ -195,5 +184,6 @@ int main()
 			}
 		} //fim do laço
 		else
+		system("cls"); //limpar a tela
 		printf("Senha incorreta!");
 } // fim do programa
